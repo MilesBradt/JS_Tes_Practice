@@ -8,7 +8,7 @@ export function changeCounter(money) {
         pennies: 0
     }
     if (money - 0.25 == 0){
-        change.quarters + 1;
+        change.quarters = change.quarters + 1;
         money = money - 0.25;
         changeCounter(money)
     }
