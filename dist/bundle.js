@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"changeCounter\", function() { return changeCounter; });\n\n\nfunction changeCounter(money) {\n    let change = {\n        quarters: 0,\n        dimes: 0,\n        nickels: 0,\n        pennies: 0\n    }\n    if (money - 0.25 == 0){\n        change.quarters + 1;\n        money = money - 0.25;\n        changeCounter(money)\n    }\n    if (money == 0) {\n        return change\n    }\n};\n\n//# sourceURL=webpack:///./src/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"changeCounter\", function() { return changeCounter; });\nfunction changeCounter(money) {\n    let change = {\n        quarters: 0,\n        dimes: 0,\n        nickels: 0,\n        pennies: 0\n    }\n    if (money - 0.25 >= 0.25 || money - 0.25 == 0){\n        change.quarters = change.quarters + 1;\n        return changeCounter(money - 0.25)\n    }\n    if (money == 0) {\n        return change\n    }\n\n};\n\n//# sourceURL=webpack:///./src/main.js?");
 
 /***/ })
 
