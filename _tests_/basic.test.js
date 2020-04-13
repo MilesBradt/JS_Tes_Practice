@@ -1,9 +1,9 @@
-import { addOne } from '../src/main.js';
+import { changeCounter } from '../src/main.js';
 
-describe('Add One', () => {
+describe('Change Counter', () => {
 
-    test('should return nmber entered plus 1', () => {
-        var add = addOne(2);
-        expect(add).toEqual(3);
+    test('should return 1 quarter from 0.25', () => {
+        var change = changeCounter(0.25).change;
+        expect(change.quarters).toEqual(1);
     });
 });

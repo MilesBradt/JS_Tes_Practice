@@ -90,10 +90,11 @@
 /*!*********************!*\
   !*** ./src/main.js ***!
   \*********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: changeCounter */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("function addOne(num) {\n    return num + 1;\n}\n\n//# sourceURL=webpack:///./src/main.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"changeCounter\", function() { return changeCounter; });\nfunction changeCounter(money) {\n    let change = {\n        quarters: 0,\n        dimes: 0,\n        nickels: 0,\n        pennies: 0\n    }\n    if (money - 0.25 == 0){\n        change.quarters + 1;\n        money = money - 0.25;\n        changeCounter(money)\n    }\n    else if (money = 0) {\n        return change\n    }\n};\n\n//# sourceURL=webpack:///./src/main.js?");
 
 /***/ })
 
