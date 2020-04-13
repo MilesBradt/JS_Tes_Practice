@@ -1,3 +1,5 @@
+
+
 export function changeCounter(money) {
     let change = {
         quarters: 0,
@@ -10,7 +12,7 @@ export function changeCounter(money) {
         money = money - 0.25;
         changeCounter(money)
     }
-    else if (money == 0) {
+    if (money == 0) {
         return change
     }
 };
